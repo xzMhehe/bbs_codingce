@@ -40,7 +40,7 @@ src/main/java/com/kuang
 - service       service
 - utils         工具类
 - vo            vo对象
-KuangstudyApplication   启动类
+CodingceApplication   启动类
 
 src/resources
 - static        静态资源
