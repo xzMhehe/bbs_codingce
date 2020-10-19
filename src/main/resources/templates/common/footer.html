@@ -3,7 +3,65 @@
 
 <footer class="container" th:fragment="footer">
     <footer class="my-5 text-muted text-center text-small">
-        <p class="mb-1">© 全栈自学社区</p>
+        <script>
+            function secondToDate(second) {
+                if (!second) {
+                    return 0;
+                }
+                var time = new Array(0, 0, 0, 0, 0);
+                if (second >= 365 * 24 * 3600) {
+                    time[0] = parseInt(second / (365 * 24 * 3600));
+                    second %= 365 * 24 * 3600;
+                }
+                if (second >= 24 * 3600) {
+                    time[1] = parseInt(second / (24 * 3600));
+                    second %= 24 * 3600;
+                }
+                if (second >= 3600) {
+                    time[2] = parseInt(second / 3600);
+                    second %= 3600;
+                }
+                if (second >= 60) {
+                    time[3] = parseInt(second / 60);
+                    second %= 60;
+                }
+                if (second > 0) {
+                    time[4] = second;
+                }
+                return time;
+            }
+        </script>
+        <script type="text/javascript" language="javascript">
+            function setTime() {
+                var create_time = Math.round(new Date('2020/10/07 00:00:00').getTime() / 1000);
+                var timestamp = Math.round((new Date().getTime()) / 1000);
+                currentTime = secondToDate((timestamp - create_time));
+                currentTimeHtml = "社区在各种灾难中运行了：" + currentTime[0] + '年' + currentTime[1] + '天'
+                    + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                    + '秒';
+                document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+            }
+
+            setInterval(setTime, 1000);
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://v1.hitokoto.cn');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var data = JSON.parse(xhr.responseText);
+                    var hitokoto = document.getElementById('hitokoto_text');
+                    hitokoto.href = 'https://i.codingce.com.cn/'
+                    hitokoto.innerText = data.hitokoto;
+                }
+            }
+            xhr.send();
+        </script>
+        <p class="mb-1">© 全栈自学社区 &nbsp;&nbsp;&nbsp;津ICP备19009605号</p>
+        <a href="https://console.upyun.com/register/?invite=By8SHd5DP"><img width="100px" height="50px"
+                                                                                      src="https://s1.ax1x.com/2020/10/18/0XVCL9.png"></a>
+        <br><p id="hitokoto"><a href="#" id="hitokoto_text" style=" color: #A4A4A4; font-family: 黑体; font-size: 13px; text-decoration:none;">:D 获取中...</a></p>
+        <br><span id="htmer_time" style=" color: #A4A4A4; font-family: 黑体; font-size: 13px"></span>
     </footer>
 </footer>
 
