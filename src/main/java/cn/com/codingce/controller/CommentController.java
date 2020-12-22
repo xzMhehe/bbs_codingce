@@ -22,7 +22,12 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
-    // 删除评论
+    /**
+     * 删除评论
+     * @param uid
+     * @param cid
+     * @return
+     */
     @GetMapping("/user/comment/delete/{uid}/{cid}")
     public String deleteComment(@PathVariable String uid,@PathVariable String cid){
         commentService.remove(new QueryWrapper<Comment>().eq("comment_id", cid));

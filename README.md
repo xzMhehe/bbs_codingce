@@ -30,7 +30,7 @@
 
 ### 目录说明
 ```shell script
-src/main/java/com/kuang
+src/main/java/com/codingce
 - config        配置类
 - controller    controller
 - generator     代码生成器
