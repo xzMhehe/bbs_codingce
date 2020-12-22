@@ -1,32 +1,39 @@
-# 全栈自学社区bbs
-
+# 模仿狂神小社区的项目
+## 全栈自学社区bbs
 ![](upload/image-20200731093732474.png)
 
 ### 介绍
+这是小狂神的开源社区 模仿并且制作
 
-> 单体项目
 
-> 地址：
+本次项目主要已练习与巩固知识为主  
+### 项目主要的依赖
+### 后端
+SpringBoot 2.3.5
 
-项目架子主要依赖：
-- SpringBoot 2.3.0
-- MySQL 5.7
-- MyBatisPlus 3.0.5
-- swagger
-- fastjson
-- thymeleaf
-- editormd
-- layer
-- bootstrap
-- springsecurity
-- 代码自动生成
+MySQL 8.x
 
-### 安装教程
+MyBatisPlus 3.0.5
 
-1.  执行SQL，创建数据库
-2.  项目导入IDEA 启动
-3.  访问测试！
-4.  自行根据代码逻辑填充测试数据，查看即可！
+fastjson
+
+springsecurity
+
+druid
+
+
+### 前端
+
+editormd
+
+bootstrap
+
+vue
+
+vue-element
+
+### 模板引擎
+thymeleaf
 
 ### 目录说明
 ```shell script
@@ -52,3 +59,5 @@ codingcestudy.sql   数据库文件
 
 ### 如何加入全栈自学小社区
 关注  全栈自学社区 公众号
+
+### 感谢小狂神
