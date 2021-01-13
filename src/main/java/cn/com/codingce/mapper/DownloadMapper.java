@@ -9,8 +9,7 @@ import org.springframework.stereotype.Repository;
  *  Mapper 接口
  * </p>
  *
- * @author xzMa
- * @since 2020-07-08
+ * @since 2021-01-01
  */
 @Repository
 public interface DownloadMapper extends BaseMapper<Download> {

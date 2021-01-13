@@ -22,11 +22,10 @@ import java.util.List;
 
 /**
  * <p>
- *  服务实现类
+ *  服务类
  * </p>
  *
- * @author xzMa
- * @since 2020-06-28
+ * @since 2021-01-01
  */
 // UserDetailsService接口用于返回用户相关数据。
 // 它有loadUserByUsername()方法，根据username查询用户实体，可以实现该接口覆盖该方法，实现自定义获取用户过程。

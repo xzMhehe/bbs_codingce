@@ -8,8 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author xzMa
- * @since 2020-07-01
+ * @since 2021-01-01
  */
 public interface SayMapper extends BaseMapper<Say> {
 

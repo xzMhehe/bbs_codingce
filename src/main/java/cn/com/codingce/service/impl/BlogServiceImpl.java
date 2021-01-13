@@ -8,11 +8,10 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ *  服务类
  * </p>
  *
- * @author xzMa
- * @since 2020-06-29
+ * @since 2021-01-01
  */
 @Service
 public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements BlogService {

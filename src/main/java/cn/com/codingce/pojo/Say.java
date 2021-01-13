@@ -14,11 +14,10 @@ import java.util.Date;
 
 /**
  * <p>
- * 
+ *  实体类
  * </p>
  *
- * @author xzMa
- * @since 2020-07-01
+ * @since 2021-01-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

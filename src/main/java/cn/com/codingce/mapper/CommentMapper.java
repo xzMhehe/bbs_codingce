@@ -8,8 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author 遇见狂神说
- * @since 2020-06-30
+ * @since 2021-01-01
  */
 public interface CommentMapper extends BaseMapper<Comment> {
 

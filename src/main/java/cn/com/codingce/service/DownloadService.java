@@ -5,11 +5,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
- *  服务类
+ *  服务实现类
  * </p>
  *
- * @author xzMa
- * @since 2020-07-08
+ * @since 2021-01-01
  */
 public interface DownloadService extends IService<Download> {
 

@@ -8,11 +8,10 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ *  服务类
  * </p>
  *
- * @author xzMa
- * @since 2020-07-08
+ * @since 2021-01-01
  */
 @Service
 public class DownloadServiceImpl extends ServiceImpl<DownloadMapper, Download> implements DownloadService {

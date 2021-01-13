@@ -13,8 +13,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author xzMa
- * @since 2020-06-28
+ * <p>
+ *  实体类
+ * </p>
+ *
+ * @since 2021-01-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
